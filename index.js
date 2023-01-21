@@ -3,9 +3,9 @@ const { lookup } = require('dns');
 var readlineSync = require('readline-sync'); //Using Package
 
 var userName = readlineSync.question('Please,Enter Your Name: ');
-console.log('\n Welcome  ' + userName + ' to The Quize Game Developed By Anas Ahmed  \n');
+console.log('\n Welcome! ' + userName + ' to The Quize Game Developed By Anas Ahmed.  \n');
 
-console.log("Instruction's :- \n \n ->Total questions are 10. \n \n ->You have to choose one correct option between 'a' and 'b' \n \n ->Type a or b to choose the option. \n \n ->Press Enter to go on next question. \n \n BEST OF LUCK :)  ");
+console.log("Instruction's are :- \n \n ->Total questions are 10. \n \n ->You have to choose one correct option between 'a' and 'b' \n \n ->Type a or b to choose the option. \n \n ->Press Enter to go on next question. \n \n BEST OF LUCK :)  ");
 console.log("__________________________________________________\n")
 
 
@@ -121,6 +121,7 @@ if (score > 7) {
 }
 else {
   // highScores.map(score => console.log(score.name, ":", score.score));
+  console.log("You are not a top scorer :(");
   console.log("Better Luck Next Time! \n");
 
 }
