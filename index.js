@@ -2,11 +2,18 @@
 const { lookup } = require('dns');
 var readlineSync = require('readline-sync'); //Using Package
 
-var userName = readlineSync.question('Please,Enter Your Name: ');
+
+// Importing module
+const chalk=require("chalk");
+
+
+var userName = readlineSync.question(chalk.yellow('Please,Enter Your Name: '));
 console.log('\n Welcome! ' + userName + ' to The Quize Game Developed By Anas Ahmed.  \n');
 
 console.log("Instruction's are :- \n \n ->Total questions are 10. \n \n ->You have to choose one correct option between 'a' and 'b' \n \n ->Type a or b to choose the option. \n \n ->Press Enter to go on next question. \n \n BEST OF LUCK :)  ");
 console.log("__________________________________________________\n")
+
+
 
 
 var score = 0; //Score
@@ -34,12 +41,12 @@ function quize(question, answer) {
   var userAnswer = readlineSync.question(question);
 
   if (userAnswer.toLowerCase() === answer.toLowerCase()) {
-    console.log("You are right! ")
+    console.log(chalk.bgHex('#0eeb58').black("You are right!"))
     score = score + 1;
   }
 
   else {
-    console.log("You are wrong!")
+    console.log(chalk.bgHex('#da1f18')("You are wrong!"))
   }
   console.log("Your current score is " + score)
   console.log("\n")
