@@ -8,9 +8,9 @@ const chalk=require("chalk");
 
 
 var userName = readlineSync.question(chalk.yellow('Please,Enter Your Name: '));
-console.log('\n Welcome! ' + userName + ' to The Quize Game Developed By Anas Ahmed.  \n');
+console.log(chalk.hex('#0dc4eb').bold('\n Welcome! ' + userName + ' to The Quize Game Developed By Anas Ahmed.  \n'));
 
-console.log("Instruction's are :- \n \n ->Total questions are 10. \n \n ->You have to choose one correct option between 'a' and 'b' \n \n ->Type a or b to choose the option. \n \n ->Press Enter to go on next question. \n \n BEST OF LUCK :)  ");
+console.log(chalk.hex('#4f17df')("Instruction's are :- \n \n ->Total questions are 10. \n \n ->You have to choose one correct option between 'a' and 'b' \n \n ->Type a or b to choose the option. \n \n ->Press Enter to go on next question. \n \n BEST OF LUCK :)  "));
 console.log("__________________________________________________\n")
 
 
