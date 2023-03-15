@@ -25,14 +25,22 @@ var topScorers = [{
   score: "10",
 },
 
+
 {
-  name: "Muzammil Ahmed",
-  score: "8",
+  name: "Meraj khan",
+  score: "9",
 },
-{
-  // name: "salman khan",
-  // score: "8",
-}]
+
+  {
+    name: "Manmohan Choudhary",
+    score: "8",
+  },
+
+  {
+    name: "Yuvraj Verma",
+    score: "8",
+  },
+]
 
 
 
@@ -54,7 +62,7 @@ function quize(question, answer) {
 
 // Questions are (As Object)
 var questionOne = {
-  question: "Q.1) Who invented Telephone? \n a) Alexander Graham Bell \n b) Thomas Edison \n ",
+  question: "Q.1) Who invented Telephone? \n a) Alexander Graham Bell \n b) Thomas Edison \n ",
   answer: "a",
 }
 
